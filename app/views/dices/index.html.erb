@@ -1,0 +1,16 @@
+<h1> Roll a dice! </h1>
+
+<%dice_value_1 = rand(1...6)%>
+<%dice_value_2 = rand(1...6)%>
+<%total = dice_value_1 + dice_value_2%>
+
+
+<p>You got number <%= total%>, and the two dices were <%=dice_value_1%> and <%=dice_value_2%><p>
+
+<img src = "/images/dice/<%= dice_value_1 %>.svg" alt ="">
+<img src = "/images/dice/<%= dice_value_2 %>.svg" alt ="">
+
+
+<p> Very nice </p>
+
+<a href="/dices"> Roll again! </a>
